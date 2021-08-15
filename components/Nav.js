@@ -14,7 +14,7 @@ export default function Nav() {
   return (
     <nav
       style={{ fontSize: "18px" }}
-      className="bg-gray-700 flex lg:flex-col lg:h-full w-full lg:w-16 justify-between items-center fixed right-0 top-0 px-8 lg:px-0 py-2 lg:py-8 text-white text-3xl font-light"
+      className="bg-gray-700 flex lg:flex-col lg:h-full w-full lg:w-16 justify-between items-center fixed right-0 top-0 px-8 lg:px-0 py-2 lg:py-8 text-white text-3xl font-light z-20"
     >
       <div className="w-[80%]">
         <Image src="/bz-logo.png" width="50px" height="50px" />
@@ -44,8 +44,8 @@ export default function Nav() {
       >
         <Link href="/">
           <a className="flex items-center">
-          <span className="font-black text-[30px] ml-3">bloge ziba</span>
-          <Image src="/bz-logo.png" width="70px" height="70px" />
+            <span className="font-black text-[30px] ml-3">bloge ziba</span>
+            <Image src="/bz-logo.png" width="70px" height="70px" />
           </a>
         </Link>
 
@@ -105,7 +105,11 @@ export default function Nav() {
           </div>
           <div className="mt-5">
             copyright 2021{" "}
-            <a href="https://jobinja.ir/user/Amirasadi" target="_blank" className="underline">
+            <a
+              href="https://jobinja.ir/user/Amirasadi"
+              target="_blank"
+              className="underline"
+            >
               amir asadi
             </a>
             &copy;

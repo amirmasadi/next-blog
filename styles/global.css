@@ -92,7 +92,18 @@
 
 @layer base{
     body{
-        @apply bg-gray-800 font-body;
+        @apply bg-gray-800 font-body overflow-x-hidden;
     }
 }
 
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    top: 90% !important;
+    right: 40px !important;
+    color: white !important;
+    /*background: #374151;*/
+    padding: 29px;
+    border-radius: 10px;
+}
+.swiper-button-next {
+    right: 110px !important;
+}

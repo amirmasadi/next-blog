@@ -1,14 +1,21 @@
-import Head from 'next/head'
-import Nav from '../components/Nav'
+import Head from "next/head";
+import MainBlog from "../components/MainBlog";
+import MainSlider from "../components/MainSlider";
 
 export default function Home() {
   return (
-    <main className="">
+    <section className="flex justify-end">
+      
       <Head>
         <title>bloge ziba</title>
         <link rel="icon" href="/bz-logo.png" />
       </Head>
-    <Nav />
-    </main>
-  )
+
+      <div className="w-full flex flex-col lg:flex-row h-[5000px] lg:h-[100vh] items-center justify-center">
+        <MainSlider />
+        <MainBlog />
+      </div>
+
+    </section>
+  );
 }
