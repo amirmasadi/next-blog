@@ -1,10 +1,13 @@
 import "tailwindcss/tailwind.css";
+import Layout from "../components/Layout";
 import "../styles/global.css"
 
 function MyApp({ Component, pageProps }) {
   return (
       <div dir="rtl">
-        <Component {...pageProps} />
+        <Layout >
+          <Component {...pageProps} />
+        </Layout>
       </div>
   );
 }

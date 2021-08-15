@@ -35,7 +35,7 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={state.submitting}
-              className={` border px-5 py-1 rounded-full hover:bg-white hover:text-gray-700 transition ease duration-500 
+              className={` border border-opacity-25 px-5 py-1 rounded-md hover:bg-white hover:text-gray-700 transition ease duration-500 
               ${
                 state.succeeded
                   ? "text-green-500 border-green-500 pointer-events-none"
