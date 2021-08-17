@@ -13,7 +13,7 @@ export default function ContactForm() {
               type="text"
               autoComplete="name"
               required
-              className="block w-full bg-transparent outline-none border border-opacity-25 focus:border-opacity-100 p-1 rounded-lg"
+              className="block w-full bg-transparent outline-none border border-opacity-25 focus:border-opacity-100 p-1 rounded-md"
             />
             <label htmlFor="name">ایمیل</label>
             <input
@@ -22,7 +22,7 @@ export default function ContactForm() {
               type="email"
               autoComplete="email"
               required
-              className="block w-full bg-transparent outline-none border border-opacity-25 focus:border-opacity-100 p-1 rounded-lg"
+              className="block w-full bg-transparent outline-none border border-opacity-25 focus:border-opacity-100 p-1 rounded-md"
             />
             <textarea
               id="message"
@@ -30,7 +30,7 @@ export default function ContactForm() {
               placeholder="پیام"
               required
               rows="3"
-              className="w-full my-8 bg-transparent outline-none border border-opacity-25 focus:border-opacity-100  px-5 py-2 rounded-lg"
+              className="w-full my-8 bg-transparent outline-none border border-opacity-25 focus:border-opacity-100  px-5 py-2 rounded-md"
             />
             <button
               type="submit"
