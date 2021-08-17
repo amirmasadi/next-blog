@@ -38,11 +38,11 @@ export default function App() {
       mousewheel={true}
       loop={true}
       autoplay={{
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
       }}
       navigation={true}
-      className="mySwiper w-[90%] lg:w-[750px] h-[80vh] lg:h-[850px]"
+      className="mySwiper w-[90%] lg:w-[750px] h-[80vh] lg:h-[850px] "
     >
       {slides.map((slid) => (
         <SwiperSlide className="relative h-full" key={slid.id}>
@@ -54,7 +54,7 @@ export default function App() {
             src={`/${slid.img}`}
             width="750px"
             height="1000px"
-            className="block object-cover rounded-md"
+            className="block object-cover"
           />
         </SwiperSlide>
       ))}

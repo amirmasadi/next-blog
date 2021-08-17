@@ -82,7 +82,7 @@ export default function Nav() {
                 />
               </svg>
             </a>
-            <a href="" targer="_blank" className="mx-3">
+            <a href="https://www.pinterest.com/amirasadi2001/_saved/" target="_blank" className="mx-3">
               <svg
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
