@@ -17,7 +17,9 @@ export default function Nav() {
       className="bg-gray-700 flex lg:flex-col lg:h-full w-full lg:w-16 justify-between items-center fixed right-0 top-0 px-8 lg:px-0 py-2 lg:py-8 text-white text-3xl font-light z-50"
     >
       <Link href="/" className="w-[80%]">
-        <a><Image src="/bz-logo.png" width="50px" height="50px" /></a>
+        <a>
+          <Image src="/bz-logo.png" width="50px" height="50px" />
+        </a>
       </Link>
 
       {!menuToggle ? (
@@ -82,7 +84,11 @@ export default function Nav() {
                 />
               </svg>
             </a>
-            <a href="https://www.pinterest.com/amirasadi2001/_saved/" target="_blank" className="mx-3">
+            <a
+              href="https://www.pinterest.com/amirasadi2001/_saved/"
+              target="_blank"
+              className="mx-3"
+            >
               <svg
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"

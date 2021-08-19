@@ -42,11 +42,11 @@ export default function App() {
         disableOnInteraction: false,
       }}
       navigation={true}
-      className="mySwiper w-[90%] lg:w-[750px] h-[80vh] lg:h-[850px] "
+      className="mySwiper w-[90%] lg:w-[750px] h-[61vh] lg:h-[850px] "
     >
       {slides.map((slid) => (
         <SwiperSlide className="relative h-full" key={slid.id}>
-          <div className="absolute top-[50%] lg:top-[70%] right-[5%] text-white z-10 p-5">
+          <div className="absolute top-[40%] lg:top-[70%] right-[5%] text-white z-10 p-5">
             <p className="mb-4 font-light text-lg">اسلایدر های زیبا</p>
             <h3 className="text-4xl font-black">{slid.title}</h3>
           </div>

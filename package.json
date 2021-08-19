@@ -10,7 +10,7 @@
     "@contentful/rich-text-react-renderer": "^15.2.0",
     "@formspree/react": "^2.2.3",
     "@heroicons/react": "^1.0.3",
-    "contentful": "^8.4.4",
+    "framer-motion": "^4.1.17",
     "graphql": "^15.5.1",
     "next": "latest",
     "react": "^17.0.2",
