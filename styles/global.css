@@ -16,7 +16,7 @@
   font-family: iranyekan;
   font-style: normal;
   font-weight: 900;
-  src: url("../public/fonts/ttf/iranyekanwebextrablack.ttf") format("truetype");
+  src: url("../public/fonts/ttf/IRANYekanWebBlack.ttf") format("truetype");
 }
 
 @tailwind base;
