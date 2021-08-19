@@ -3,6 +3,7 @@ import MainBlog from "../components/MainBlog";
 import MainSlider from "../components/MainSlider";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
+
 export async function getStaticProps() {
   const client = new ApolloClient({
     uri: "https://graphql.contentful.com/content/v1/spaces/007s9spfg1xf/?access_token=XzqsDRL9fI3JNlIFo2vlVlgAlsslLpbM7K0AYH3WfEI",
@@ -30,6 +31,7 @@ export async function getStaticProps() {
   });
   return {
     props: { blog: data.blogsCollection.items },
+    revalidate: 300
   };
 }
 
@@ -41,7 +43,7 @@ export default function Home({ blog }) {
         <link rel="icon" href="/bz-logo.png" />
       </Head>
 
-      <div className="w-full flex flex-col lg:flex-row h-[5000px] lg:h-[100vh] items-center justify-center">
+      <div className="w-full flex flex-col lg:flex-row  lg:h-[100vh] items-center lg:justify-center">
         <div className="lg:fixed lg:right-24">
           <MainSlider />
         </div>
