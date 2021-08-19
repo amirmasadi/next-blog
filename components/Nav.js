@@ -14,11 +14,11 @@ export default function Nav() {
   return (
     <nav
       style={{ fontSize: "18px" }}
-      className="bg-gray-700 flex lg:flex-col lg:h-full w-full lg:w-16 justify-between items-center fixed right-0 top-0 px-8 lg:px-0 py-2 lg:py-8 text-white text-3xl font-light z-20"
+      className="bg-gray-700 flex lg:flex-col lg:h-full w-full lg:w-16 justify-between items-center fixed right-0 top-0 px-8 lg:px-0 py-2 lg:py-8 text-white text-3xl font-light z-50"
     >
-      <div className="w-[80%]">
-        <Image src="/bz-logo.png" width="50px" height="50px" />
-      </div>
+      <Link href="/" className="w-[80%]">
+        <a><Image src="/bz-logo.png" width="50px" height="50px" /></a>
+      </Link>
 
       {!menuToggle ? (
         <MenuAlt4Icon
@@ -37,7 +37,7 @@ export default function Nav() {
       <div className="hidden lg:block"></div>
 
       <div
-        className={`bg-gray-600 flex flex-col items-center justify-around absolute top-0 right-0 
+        className={`bg-gray-600 bg-opacity-60 backdrop-filter backdrop-blur-lg flex flex-col items-center justify-around absolute top-0 right-0 
         h-[100vh]  lg:h-full w-full lg:w-[30vw] px-5 transform ${
           menuToggle ? "translate-x-0" : "translate-x-[1000px]"
         } transition duration-1000 ease-out text-white`}
