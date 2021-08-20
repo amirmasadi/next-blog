@@ -4,8 +4,11 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+const CFSpace = process.env.CONTENTFUL_SPACE_ID
+const CFToken = process.env.CONTENTFUL_ACCESS_KEY
+
 const client = new ApolloClient({
-  uri: "https://graphql.contentful.com/content/v1/spaces/007s9spfg1xf/?access_token=XzqsDRL9fI3JNlIFo2vlVlgAlsslLpbM7K0AYH3WfEI",
+  uri: `https://graphql.contentful.com/content/v1/spaces/${CFSpace}/?access_token=${CFToken}`,
   cache: new InMemoryCache(),
 });
 
