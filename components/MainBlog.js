@@ -57,7 +57,7 @@ export default function MainBlog({ blog }) {
                 <h3 className="text-xl transition duration-300 hover:text-gray-400">
                   {post.title}
                 </h3>
-                <div className="w-full flex justify-between my-3 font-extralight">
+                <div className="w-full flex justify-between my-3">
                   <span>{post.author}</span>
                   <span>{post.category}</span>
                   {
