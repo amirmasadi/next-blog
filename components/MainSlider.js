@@ -47,7 +47,7 @@ export default function App() {
       {slides.map((slid) => (
         <SwiperSlide className="relative h-full" key={slid.id}>
           <div className="absolute top-[40%] lg:top-[70%] right-[5%] text-white z-10 p-5">
-            <p className="mb-4 font-light text-lg">اسلایدر های زیبا</p>
+            <p className="mb-4 text-lg">اسلایدر های زیبا</p>
             <h3 className="text-4xl font-black">{slid.title}</h3>
           </div>
           <Image
