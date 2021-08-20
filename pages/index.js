@@ -5,6 +5,7 @@ import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 
 export async function getStaticProps() {
+
   const client = new ApolloClient({
     uri: "https://graphql.contentful.com/content/v1/spaces/007s9spfg1xf/?access_token=XzqsDRL9fI3JNlIFo2vlVlgAlsslLpbM7K0AYH3WfEI",
     cache: new InMemoryCache(),
@@ -31,13 +32,15 @@ export async function getStaticProps() {
   });
   return {
     props: { blog: data.blogsCollection.items },
-    revalidate: 300
+    revalidate: 300,
   };
 }
 
 export default function Home({ blog }) {
+
   return (
-    <section className="flex justify-end  container mx-auto">
+    <section className="flex justify-end  container mx-auto" >
+
       <Head>
         <title>bloge ziba</title>
         <link rel="icon" href="/bz-logo.png" />

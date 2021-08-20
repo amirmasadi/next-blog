@@ -14,7 +14,7 @@ export default function Nav() {
   return (
     <nav
       style={{ fontSize: "18px" }}
-      className="bg-gray-700 flex lg:flex-col lg:h-full w-full lg:w-16 justify-between items-center fixed right-0 top-0 px-8 lg:px-0 py-2 lg:py-8 text-white text-3xl font-light z-50"
+      className="bg-gray-700 flex lg:flex-col lg:h-full w-full lg:w-16 justify-between items-center fixed right-0 top-0 px-8 lg:px-0 py-2 lg:py-8 text-white text-3xl font-light z-40"
     >
       <Link href="/" className="w-[80%]">
         <a>
@@ -44,7 +44,7 @@ export default function Nav() {
           menuToggle ? "translate-x-0" : "translate-x-[1000px]"
         } transition duration-1000 ease-out text-white`}
       >
-        <Link href="/">
+        <Link href="/"  onClick={menuHandeler} >
           <a className="flex items-center">
             <span className="font-black text-[30px] ml-3">bloge ziba</span>
             <Image src="/bz-logo.png" width="70px" height="70px" />

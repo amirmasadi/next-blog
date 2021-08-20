@@ -18,7 +18,9 @@ const postShow = {
 };
 
 export default function MainBlog({ blog }) {
+
   return (
+
     <motion.div
       initial="initial"
       animate="animate"
@@ -75,5 +77,6 @@ export default function MainBlog({ blog }) {
         <p>به اصطلاح فوتر</p>
       </footer>
     </motion.div>
+
   );
 }
