@@ -2,21 +2,21 @@
   font-family: iranyekan;
   font-style: normal;
   font-weight: 300;
-  src: url("../public/fonts/ttf/iranyekanweblight.ttf") format("truetype");
+  src: url("../public/fonts/iranyekanweblight.ttf") format("truetype");
 }
 
 @font-face {
   font-family: iranyekan;
   font-style: normal;
   font-weight: normal;
-  src: url("../public/fonts/ttf/iranyekanwebregular.ttf") format("truetype");
+  src: url("../public/fonts/iranyekanwebregular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: iranyekan;
   font-style: normal;
   font-weight: 900;
-  src: url("../public/fonts/ttf/IRANYekanWebBlack.ttf") format("truetype");
+  src: url("../public/fonts/IRANYekanWebBlack.ttf") format("truetype");
 }
 
 @tailwind base;
